@@ -24,7 +24,7 @@ export const FormularioIngreso = () => {
         />
       </Box>
       <Box sx={{ justifyContent: "center", display: "flex", mt: 5 }}>
-        <Link to="/crearactividades" style={{ textDecoration: "none" }}>
+        <Link to="/listabasica" style={{ textDecoration: "none" }}>
           <Button variant="contained">Ingresar</Button>
         </Link>
       </Box>

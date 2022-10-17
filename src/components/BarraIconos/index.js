@@ -1,5 +1,4 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
@@ -9,7 +8,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import PersonIcon from "@mui/icons-material/Person";
 import Toolbar from "@mui/material/Toolbar";
 
-export const BarraIconos = () => {
+export const BarraIconos = ({ setDialogOpen }) => {
   return (
     <Toolbar>
       <IconButton size="large" color="inherit" sx={{ ml: 2 }}>
@@ -24,7 +23,11 @@ export const BarraIconos = () => {
         placeholder="Search"
         inputProps={{ "aria-label": "search" }}
       />
-      <IconButton size="large" color="inherit">
+      <IconButton
+        size="large"
+        color="inherit"
+        onClick={() => setDialogOpen(true)}
+      >
         <AddIcon />
       </IconButton>
       <IconButton size="large" color="inherit">
